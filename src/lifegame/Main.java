@@ -18,6 +18,7 @@ public class Main extends JFrame{
 		add(lifegame);
 	}
 
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Main frame = new Main(40, 50);//界面
@@ -47,6 +48,7 @@ public class Main extends JFrame{
         frame.setResizable(false);
 	}
 	
+	
 	class StarActionListener implements ActionListener//消息响应“star”
     {
     	public void actionPerformed(ActionEvent e) 
@@ -55,6 +57,7 @@ public class Main extends JFrame{
     	}
     }
     
+	
     class MoonActionListener implements ActionListener//消息响应“moon”
     {
     	public void actionPerformed(ActionEvent e) 
@@ -62,6 +65,7 @@ public class Main extends JFrame{
     		lifegame.setMoon();
     	}
     }    
+    
     
     class AboutActionListener implements ActionListener//消息响应“about”
     {
@@ -76,6 +80,8 @@ public class Main extends JFrame{
     		frame.pack();
     		frame.setVisible(true);
     	}
+    	
     }
+    
 
 }
